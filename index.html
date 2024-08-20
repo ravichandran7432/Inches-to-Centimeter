@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>inch</title>
+    </head>
+    <body>
+        <h1>inch to centimeter converter</h1>
+        <input type="number" id="inches" placeholder="enter the inches">
+        <button onclick="convert()">Check</button>
+        <p id="result"></p>
+        <script>
+            function convert(){
+                var inches=document.getElementById("inches").value;
+                var centimeters=inches*2.54;
+                document.getElementById("result").innerHTML=inches+"inches = "+centimeters.toFixed(2)+"CM";
+            }
+        </script>
+    </body>
+</html>
